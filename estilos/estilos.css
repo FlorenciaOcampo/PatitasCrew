@@ -318,10 +318,11 @@ footer .container{
     footer .container{
         align-items: flex-end;
     }
+    
     .grilla2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 5% 1fr 1fr 1fr;
+        grid-template-rows: 8% 1fr 1fr 1fr;
         grid-template-areas:
         "header header header header"
         "formulario formulario formulario formulario"
@@ -338,6 +339,7 @@ footer .container{
     .footer{
         grid-area: footer;
     }
+    /*
     .formulario{
         background-color: #E5E5E5;
         background-size: 100vw 100vh;
@@ -359,6 +361,7 @@ footer .container{
     .formulario__titulo{
         text-align: center;
     }*/
+    /*
     .formulario__texto{
         text-align: center;
     }
@@ -386,8 +389,10 @@ footer .container{
         background-color: #c9a2b7;
         border: 1px solid #c797ca;
         transition:0.2s;
-        cursor: pointer;
+        cursor: pointer; 
+
     }
+    */
 .maps{
 padding-top: 100px;
 padding-left: 550px;
@@ -437,5 +442,9 @@ padding-left: 550px;
     width: 1900px;
     height: 300px;
     background-image: linear-gradient(to bottom, rgb(8, 203, 238), rgb(228, 188, 216));
+}
+.formulario{
+    height: 500px;
+    width: 500px;
 }
 }
