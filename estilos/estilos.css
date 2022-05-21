@@ -102,32 +102,32 @@ header a:hover{
 
 }
 
-#hero button{
+.hero button{
     font-size: 1.75em;
     color: #386ed1;
 }
 
-#hero button:hover{
+.hero button:hover{
     color: #93a9d3;
 }
 
 
-#somos-patitas .container{
+.somos-patitas .container{
     text-align: center;
     padding: 200px 12px;
 }
 
-#nuestros-peludos{
+.nuestros-peludos{
     background-color: rgb(221, 141, 208);
     color: rgb(100, 214, 235);
     text-align: center;
 }
 
-#nuestros-peludos .container{
+.nuestros-peludos .container{
     padding: 100px 0px;
 }
 
-#nuestros-peludos p{
+.nuestros-peludos p{
     color: #ffffff;
     font-family:'Neucha', cursive
 }
@@ -138,7 +138,7 @@ header a:hover{
     display: grid;
 }
 
-#nuestros-peludos .carta{
+.nuestros-peludos .carta{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -158,17 +158,17 @@ header a:hover{
 
 }
 
-#caracteristicas .container{
+.caracteristicas .container{
     text-align: center;
     padding:  250px 12px;
 }
 
-#caracteristicas li{
+.caracteristicas li{
     margin: 16px 0px;
     font-weight: bold;
 }
 
-#aplica-ya{
+.aplica-ya{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,11 +179,11 @@ header a:hover{
     height: 80vh;
 }
 
-#aplica-ya h2{
+.aplica-ya h2{
     font-size: 9vw;
 }
 
-#aplica-ya button{
+.aplica-ya button{
     font-size: 5vw;
 }
 
@@ -254,12 +254,12 @@ footer .container{
         padding-bottom: 0;
         padding-right: 20px;
     }
-    #somos-patitas .container{
+    .somos-patitas .container{
         display: flex;
         justify-content: space-evenly;
     }
 
-    #somos-patitas .texto{
+    .somos-patitas .texto{
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -273,45 +273,45 @@ footer .container{
         margin-top: 0px;
     }
 
-    #somos-patitas .img-container{
+    .somos-patitas .img-container{
         background-image: url(../img/dos.jpg);
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 400px;
     }
-    #nuestros-peludos .patitas{
+    .nuestros-peludos .patitas{
         display: flex;
         justify-content: center;
     }
-    #nuestros-peludos p{
+    .nuestros-peludos p{
         display: block;
         margin-bottom: 30px;
     }
 
-    #nuestros-peludos h3{
+    .nuestros-peludos h3{
         margin-top: 0;
     }
 
-    #nuestros-peludos .carta{
+    .nuestros-peludos .carta{
         padding: 50px;
     }
 
 
-    #caracteristicas .container{
+    .caracteristicas .container{
         text-align: initial;
     }
 
-    #caracteristicas ul{
+    .caracteristicas ul{
         margin-left: 100px;
     }
 
-    #aplica-ya button{
+    .aplica-ya button{
         font-size: 3em;
     }
     
 
-    #aplica-ya h2{
+    .aplica-ya h2{
         font-size: 60px;
     }
 
@@ -444,6 +444,9 @@ padding-left: 550px;
     background-image: linear-gradient(to bottom, rgb(8, 203, 238), rgb(228, 188, 216));
 }
 .formulario{
+    display: flex;
+
+    align-items: center;
     height: 500px;
     width: 500px;
 }
