@@ -1,0 +1,14 @@
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(233, 122, 187);
+    font-size: 1.9em; 
+    font-family:'Lacquer', cursive ;
+}

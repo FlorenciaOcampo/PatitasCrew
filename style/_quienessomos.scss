@@ -1,0 +1,68 @@
+.somos-patitas .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    padding-top: 160px;
+    flex-direction: column;
+    justify-content: center;
+}
+.aplica-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(156, 155, 218);
+    color: rgb(65, 96, 180);
+    height: 80vh;
+        .aplica-ya h2{
+        font-size: 9vw;
+            .aplica-ya button{
+            font-size: 5vw;
+        }
+    }
+}
+
+    
+    footer{
+        background-color: rgb(54, 157, 189);
+        footer p{
+            margin: 0;
+            color: $color;
+            footer .container{
+                height: 150 px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end
+            
+            }
+        }
+    }
+    
+    .somos-patitas .container{
+        display: flex;
+        justify-content: space-evenly;
+        .somos-patitas .texto{
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding-left: 30px;
+            padding-top: 160px;
+            flex-direction: column;
+                justify-content: center;
+                #somos-patitas h2{
+                margin-top: 0px;
+                .somos-patitas .img-container{
+                    background-image: url(../img/dos.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    height: 500px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+
+    $color: rgb(148, 92, 92)
