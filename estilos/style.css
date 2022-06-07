@@ -23,6 +23,18 @@ header .logo {
   font-family: 'Lacquer', cursive;
 }
 
+.footer .btn--twitter {
+  background-color: #55acee;
+}
+
+.footer .btn--facebook {
+  background-color: #3a5795;
+}
+
+.footer .btn--instagram {
+  background-color: #c25e30;
+}
+
 .somos-patitas .texto {
   width: 50%;
   max-width: 600px;
@@ -58,11 +70,11 @@ header .logo {
   height: 80vh;
 }
 
-.aplica-ya h2 {
+.aplica-ya .aplica-ya h2 {
   font-size: 9vw;
 }
 
-.aplica-ya button {
+.aplica-ya .aplica-ya h2 .aplica-ya button {
   font-size: 5vw;
 }
 
@@ -70,12 +82,12 @@ footer {
   background-color: #369dbd;
 }
 
-footer p {
+footer footer p {
   margin: 0;
-  color: #000000;
+  color: #945c5c;
 }
 
-footer .container {
+footer footer p footer .container {
   height: 150 px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +109,7 @@ footer .container {
           justify-content: space-evenly;
 }
 
-.somos-patitas .texto {
+.somos-patitas .container .somos-patitas .texto, .somos-patitas .container .texto .texto {
   width: 50%;
   max-width: 600px;
   text-align: initial;
@@ -112,11 +124,11 @@ footer .container {
           justify-content: center;
 }
 
-#somos-patitas h2 {
+.somos-patitas .container .somos-patitas .texto #somos-patitas h2, .somos-patitas .container .texto .texto #somos-patitas h2 {
   margin-top: 0px;
 }
 
-.somos-patitas .img-container {
+.somos-patitas .container .somos-patitas .texto #somos-patitas h2 .somos-patitas .img-container, .somos-patitas .container .texto .texto #somos-patitas h2 .somos-patitas .img-container, .somos-patitas .container .somos-patitas .texto #somos-patitas h2 .texto .img-container, .somos-patitas .container .texto .texto #somos-patitas h2 .texto .img-container {
   background-image: url(../img/dos.jpg);
   background-size: cover;
   background-position: center center;
@@ -295,6 +307,7 @@ header a:hover {
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
+  max-width: 500px;
   padding: 50px 0px;
   margin: 30px;
   border-radius: 15px;
@@ -302,17 +315,23 @@ header a:hover {
 
 .carta:first-child {
   background-image: url("../img/elsa.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carta:nth-child(2) {
   background-image: url("../img/jajr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carta:last-child {
   background-image: url("../img/perror.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.caracteristicas .container {
+.caracteristicas .container--li {
   text-align: center;
   padding: 250px 12px;
 }
@@ -655,5 +674,30 @@ footer .container {
     height: 500px;
     width: 500px;
   }
+  /*map*/
+  .btn--twitter {
+    background-color: #55acee;
+  }
+  .btn--facebook {
+    background-color: #3a5795;
+  }
+  .btn--instagram {
+    background-color: #c25e30;
+  }
+  /*extend*/
+  .somos-patitas, .somos-patitas .texto {
+    background-color: #faf9fa;
+  }
+}
+
+.somos-patitas .texto {
+  margin-top: 0%;
+}
+
+/*mixin*/
+.formulario {
+  height: 500px;
+  width: 700px;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
