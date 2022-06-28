@@ -38,7 +38,6 @@ button :hover{
 }
 
 .container{
-    max-width: 14000px;
     margin: auto;
 }
 .color-acento{
@@ -47,7 +46,6 @@ button :hover{
 header{ 
     background-color: rgb(116, 208, 224);
     margin-bottom: 0px;
-    height: 100px;
 }
 
 header .logo{
@@ -112,7 +110,11 @@ header a:hover{
     text-align: center;
     padding: 200px 12px;
 }
-
+.patitas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .nuestros-peludos{
     background-color: rgb(221, 141, 208);
     color: rgb(100, 214, 235);
@@ -128,17 +130,7 @@ header a:hover{
     font-family:'Neucha', cursive
 }
 
-
-
-.grilla{
-    display: grid;
-}
-
 .nuestros-peludos .carta{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    max-width: 500px;
     padding:  50px 0px;
     margin: 30px;
     border-radius: 15px;
@@ -147,16 +139,19 @@ header a:hover{
     background-image: url("../img/elsa.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 .carta:nth-child(2){ 
     background-image: url("../img/jajr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 .carta:last-child{ 
     background-image: url("../img/perror.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 
 }
 
@@ -188,7 +183,9 @@ header a:hover{
 .aplica-ya button{
     font-size: 5vw;
 }
-
+.formulario{
+    padding: 20px 16px;
+}
 footer{
     background-color: rgb(54, 157, 189);
 }
@@ -205,7 +202,7 @@ footer .container{
 }
 
 @media (min-width: 1080px){
-
+    
     .grilla1{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -256,6 +253,11 @@ footer .container{
         padding-bottom: 0;
         padding-right: 20px;
     }
+    .patitas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     .somos-patitas .container{
         display: flex;
         justify-content: space-evenly;
@@ -282,10 +284,7 @@ footer .container{
         height: 500px;
         width: 400px;
     }
-    .nuestros-peludos .patitas{
-        display: flex;
-        justify-content: center;
-    }
+
     .nuestros-peludos p{
         display: block;
         margin-bottom: 30px;
@@ -294,12 +293,12 @@ footer .container{
     .nuestros-peludos h3{
         margin-top: 0;
     }
-
     .nuestros-peludos .carta{
+        box-sizing: border-box;
+        width: 700px;
+        height: 500px;
         padding: 50px;
     }
-
-
     .caracteristicas .container{
         text-align: initial;
     }
@@ -318,13 +317,14 @@ footer .container{
     }
 
     footer .container{
+        justify-content: space-around;
         align-items: flex-end;
     }
     
     .grilla2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 8% 1fr 1fr 1fr;
+        grid-template-rows: 8% 1fr 1fr;
         grid-template-areas:
         "header header header header"
         "formulario formulario formulario formulario"
@@ -353,10 +353,7 @@ footer .container{
 
     #somos-patitas h2{
         margin-top: 0px;
-.maps{
-padding-top: 100px;
-padding-left: 550px;
-}
+
 .footerxd .container{
 
     padding-top: 500px;
@@ -403,12 +400,10 @@ padding-left: 550px;
     height: 300px;
     background-image: linear-gradient(to bottom, rgb(8, 203, 238), rgb(228, 188, 216));
 }
-.formulario{
+.maps{
     display: flex;
-
     align-items: center;
-    height: 500px;
-    width: 500px;
+    justify-content: center;
 }
 /*map*/
 $redes:(
@@ -422,23 +417,25 @@ $redes:(
     }
 }
 /*extend*/
-.somos-patitas{
-background-color: #faf9fa
+%somos-patitas{
+    background-color: #faf9fa
     }
 
 }
 .somos-patitas .texto{
-    @extend.somos-patitas;
+    @extend %somos-patitas;
     margin-top:0%
 }
 /*mixin*/
 @mixin sizes ($width, $height){
-    height: $height;
+    display: flex;
+    align-items: center;
     width: $width;
+    height: $height;
 }
 .formulario{
-    @include sizes (700px, 500px);
+    @include sizes (100%, 600px);
     background-color: #ffffff;
-}
-
-
+    padding: 20px
+    200px;
+}}
